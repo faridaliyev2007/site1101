@@ -1,22 +1,6 @@
-// Load shared components into pages and wire up mobile nav
+// Mobile nav toggle for Jekyll portfolio
 (function(){
-  async function loadHTML(selector, url){
-    try{
-      const res = await fetch(url);
-      if(!res.ok) throw new Error('Failed to load '+url);
-      const html = await res.text();
-      document.querySelector(selector).innerHTML = html;
-      return true;
-    }catch(e){
-      console.warn(e);
-      return false;
-    }
-  }
-
-  async function init(){
-    await loadHTML('#nav-placeholder', 'components/nav.html');
-    await loadHTML('#footer-placeholder', 'components/footer.html');
-
+  function init(){
     // set year in footer
     const y = new Date().getFullYear();
     const yearEls = document.querySelectorAll('.year');

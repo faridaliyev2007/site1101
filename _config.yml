@@ -1,0 +1,30 @@
+# Jekyll configuration for Farid Aliyev's Portfolio
+
+title: Farid Aliyev — Portfolio
+description: Personal portfolio showcasing projects and skills
+author: Farid Aliyev
+email: ferid2007aliyev@gmail.com
+url: https://faridaliyev2007.github.io/site1101
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
