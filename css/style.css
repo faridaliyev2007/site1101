@@ -37,7 +37,7 @@ p{margin:0 0 1rem 0;color:var(--text)}
 .hamburger::after{top:8px}
 
 /* HERO */
-.page-home{background:linear-gradient(135deg, #f0fdfb 0%, #ffffff 100%)}
+.page-home{background:linear-gradient(135deg, #f0fdfb 0%, #ffffff 100%);margin:-2rem -1rem 0 -1rem;padding:2rem 1rem}
 .hero{display:flex;gap:3rem;align-items:center;padding:4rem 0}
 .hero-left{flex:0 0 180px}
 .profile-photo{width:180px;height:180px;object-fit:cover;border-radius:50%;border:8px solid var(--bg-secondary);box-shadow:var(--shadow-lg);transition:transform 0.3s ease}
