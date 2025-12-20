@@ -5,6 +5,7 @@ description: Personal portfolio showcasing projects and skills
 author: Farid Aliyev
 email: ferid2007aliyev@gmail.com
 url: https://faridaliyev2007.github.io/site1101
+baseurl: /site1101
 
 # Build settings
 markdown: kramdown
