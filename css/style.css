@@ -33,9 +33,12 @@ body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica N
 
 /* Projects */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
-.project-card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #eef2f6}
+.project-card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #eef2f6;display:flex;flex-direction:column}
 .project-img{width:100%;height:160px;object-fit:cover}
-.project-body{padding:1rem}
+.project-body{padding:1rem;flex:1;display:flex;flex-direction:column}
+.project-body p{flex:1}
+.btn-project{display:inline-block;margin-top:0.8rem;padding:0.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;font-size:0.95rem;transition:background 0.2s ease;align-self:flex-start}
+.btn-project:hover{background:#0d9593}
 
 /* About grid */
 .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
