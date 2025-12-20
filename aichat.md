@@ -1048,3 +1048,23 @@ Ran terminal command: git add projects.html; git commit -m "Add View Project but
 ✅ **Done!** Added the "View Project" button to your Hour of AI project card with the YouTube link. The changes are live on your portfolio! 🎉
 
 Made changes.
+
+User: also can you please remove the repository icon
+
+GitHub Copilot: Read [](file:///c%3A/Users/User/Desktop/project3/_includes/footer.html)
+
+I'll remove the repository icon (the third social link): 
+
+Using "Replace String in File"
+
+
+```
+
+```
+Now I'll commit and push the change: 
+
+Ran terminal command: git add _includes/footer.html; git commit -m "Remove repository icon from footer"; git push origin main
+
+✅ **Done!** Removed the repository icon from the footer. Now you just have GitHub and Codecademy icons. Changes are live! 🎉
+
+Made changes.
