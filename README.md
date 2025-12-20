@@ -1,46 +1,151 @@
-# Personal Portfolio (GitHub Pages)
+# Personal Portfolio — Farid Aliyev
 
-This repository is a simple, responsive personal portfolio starter built with only HTML, CSS, and JavaScript. It is structured for deployment to GitHub Pages.
+A responsive personal portfolio website built with **Jekyll**, **HTML**, **CSS**, and **JavaScript**. Deployed on GitHub Pages with modern design and clean code structure.
 
-Files of interest:
-- [index.html](index.html) — Home (replace name, photo, intro)
-- [about.html](about.html) — About page
-- [projects.html](projects.html) — Projects page (replace project titles, descriptions, and images in `images/`)
-- [resume.html](resume.html) — Extra page (Resume placeholder)
-- [components/nav.html](components/nav.html) and [components/footer.html](components/footer.html) — Shared components loaded by JavaScript
-- [css/style.css](css/style.css) — Styles
-- [js/main.js](js/main.js) — Loads components and handles mobile nav
+**Live Site:** https://faridaliyev2007.github.io/site1101/  
+**Repository:** https://github.com/faridaliyev2007/site1101
 
-Where to replace content
-- Replaced placeholders with your info. Confirm the profile photo filename below.
-- Place your photo at `images/profile.jpg` (or update the `img` src in `index.html`).
-- Update project images in `images/` and edit descriptions in `projects.html`.
+## Project Structure
 
-Run locally (Live Server)
-1. Install the Live Server extension in VS Code (or use any static file server).
-2. Open this folder in VS Code.
-3. Right-click `index.html` and choose "Open with Live Server", or run a simple Python server:
+```
+project3/
+├── _layouts/
+│   └── default.html              # Base template for all pages
+├── _includes/
+│   ├── nav.html                  # Navigation component (reused on all pages)
+│   └── footer.html               # Footer component (reused on all pages)
+├── _config.yml                   # Jekyll configuration
+├── css/
+│   └── style.css                 # Modern responsive styles
+├── js/
+│   └── main.js                   # Mobile navigation toggle
+├── images/
+│   ├── profile.jpg               # Profile photo
+│   ├── project1.png              # Project 1 screenshot
+│   └── project2.jpeg             # Project 2 screenshot
+├── index.html                    # Home page (hero section)
+├── about.html                    # About page (bio, skills, languages)
+├── projects.html                 # Projects showcase
+├── Gemfile                       # Ruby dependencies for Jekyll
+├── .gitignore                    # Git ignore rules
+└── README.md                     # This file
+```
+
+## Features
+
+✅ **Modern Design** — Clean, responsive layout with smooth animations  
+✅ **Mobile-Friendly** — Mobile nav menu, scalable images, responsive grid  
+✅ **Jekyll-Powered** — Fast static site generation, easy content updates  
+✅ **GitHub Pages Ready** — One-click deployment, automatic builds  
+✅ **Component Reuse** — Nav and footer via Jekyll `_includes`  
+✅ **Customizable** — Easily update content, colors, and styling  
+
+## Customization
+
+### Update Your Info
+- **Name & Contact:** Edit `_includes/footer.html`
+- **Social Links:** Edit `_includes/nav.html` (GitHub, Codecademy, etc.)
+- **Profile Photo:** Replace `images/profile.jpg`
+- **Colors & Styles:** Edit `css/style.css` (CSS variables at top)
+
+### Update Pages
+- **Home:** Edit `index.html` (intro, buttons)
+- **About:** Edit `about.html` (bio, skills, languages)
+- **Projects:** Edit `projects.html` (add/remove project cards)
+
+## Run Locally
+
+### Prerequisites
+- [Ruby](https://rubyinstaller.org/) (3.0+)
+- Jekyll: `gem install jekyll bundler`
+
+### Start Development Server
+```bash
+cd c:\Users\User\Desktop\project3
+jekyll serve
+```
+Visit `http://localhost:4000` in your browser. Changes auto-reload!
+
+**For GitHub Pages subdirectory deployment:**
+- `baseurl: /site1101` is configured in `_config.yml`
+- All assets use `{{ site.baseurl }}` for correct paths
+
+## Deploy to GitHub Pages
+
+✅ **Already configured!** This repo is set up for automatic deployment.
+
+### To publish changes:
+```bash
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+GitHub automatically:
+1. Detects the push
+2. Runs Jekyll build
+3. Deploys to https://faridaliyev2007.github.io/site1101/
+
+Build completes in ~1-2 minutes. Refresh to see changes!
+
+## Git Workflow
 
 ```bash
-# Python 3
-python -m http.server 5500
-# then visit http://localhost:5500 in your browser
+# View commit history
+git log
+
+# Check changed files
+git status
+
+# View file differences
+git diff
+
+# Stage changes
+git add .
+
+# Commit with message
+git commit -m "Describe your changes"
+
+# Push to GitHub
+git push origin main
 ```
 
-Deploy to GitHub Pages
-1. Create a new repository on GitHub and push this project.
-2. In the repository Settings → Pages, set the source to the `main` (or `master`) branch and the root folder (`/`).
-3. After a short build time, your site will be available at `https://<your-username>.github.io/<your-repo>/`.
+## File Descriptions
 
-Notes
-- The nav and footer are shared HTML files loaded at runtime by `js/main.js`. This keeps pages consistent while keeping the site GitHub Pages friendly (no server-side includes needed).
-- All links are relative so the site will work on GitHub Pages when pushed to a repo.
+| File | Purpose |
+|------|---------|
+| `_config.yml` | Jekyll site settings (title, baseurl, plugins) |
+| `_layouts/default.html` | Base HTML template wrapping all pages |
+| `_includes/nav.html` | Navigation bar (included on every page) |
+| `_includes/footer.html` | Footer with contact & social links |
+| `css/style.css` | All styling (mobile-first, responsive) |
+| `js/main.js` | Mobile menu toggle, footer year update |
+| `Gemfile` | Ruby gem dependencies (tells GitHub this is a Jekyll project) |
 
-To copy your photo from Downloads into the project images folder (PowerShell):
+## Next Steps
 
-```powershell
-Copy-Item "C:\Users\User\Downloads\WhatsApp Image 2025-12-19 at 23.25.50.jpeg" -Destination "c:\Users\User\Desktop\project3\images\profile.jpg"
-```
+- [ ] Add Hour of AI video link to Project 2 when available
+- [ ] Customize colors and fonts in `css/style.css`
+- [ ] Add more projects to `projects.html`
+- [ ] Update resume/CV information
+- [ ] Add custom domain (optional)
 
-If you want, I can:
-- Add a downloadable resume PDF and update the `resume.html` page.
+## Tech Stack
+
+- **Jekyll** — Static site generator
+- **HTML5** — Semantic markup
+- **CSS3** — Modern responsive design
+- **JavaScript** — Interactive mobile menu
+- **GitHub Pages** — Free hosting & deployment
+
+## Contact
+
+📧 Email: ferid2007aliyev@gmail.com  
+🔗 GitHub: https://github.com/faridaliyev2007  
+📚 Codecademy: https://www.codecademy.com/profiles/faliyev23980  
+📍 Location: Baku, Azerbaijan  
+📱 Phone: +994 (50) 522 20 07
+
+---
+
+**Built with ❤️ using Jekyll & GitHub Pages**
