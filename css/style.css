@@ -42,7 +42,12 @@ body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica N
 
 /* Footer */
 .site-footer{border-top:1px solid #e6e9ee;padding:1rem 0;background:#fff;margin-top:2rem}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.footer-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.footer-left a{color:var(--accent);text-decoration:none}
+.footer-left a:hover{text-decoration:underline}
+.contact-info{margin-top:0.5rem}
+.contact-info ul li{margin:0.3rem 0;color:var(--muted)}
+.contact-info ul li a{color:var(--accent)}
 .social{display:flex;gap:.6rem}
 .social-link{color:var(--muted);text-decoration:none;display:flex;align-items:center;justify-content:center;padding:0.5rem;border-radius:6px;transition:color 0.2s ease, background 0.2s ease;cursor:pointer}
 .social-link:hover{color:var(--accent);background:#f3f4f6}
