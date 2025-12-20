@@ -12,8 +12,8 @@ Files of interest:
 - [js/main.js](js/main.js) — Loads components and handles mobile nav
 
 Where to replace content
-- Replace `Your Name` text and all `your-username` / `your-repo` link placeholders in `components/footer.html` and `components/nav.html`.
-- Replace `images/profile-placeholder.svg` with your photo (keep the filename or update the `img` src in `index.html`).
+- Replaced placeholders with your info. Confirm the profile photo filename below.
+- Place your photo at `images/profile.jpg` (or update the `img` src in `index.html`).
 - Update project images in `images/` and edit descriptions in `projects.html`.
 
 Run locally (Live Server)
@@ -36,6 +36,11 @@ Notes
 - The nav and footer are shared HTML files loaded at runtime by `js/main.js`. This keeps pages consistent while keeping the site GitHub Pages friendly (no server-side includes needed).
 - All links are relative so the site will work on GitHub Pages when pushed to a repo.
 
+To copy your photo from Downloads into the project images folder (PowerShell):
+
+```powershell
+Copy-Item "C:\Users\User\Downloads\WhatsApp Image 2025-12-19 at 23.25.50.jpeg" -Destination "c:\Users\User\Desktop\project3\images\profile.jpg"
+```
+
 If you want, I can:
-- Replace placeholder text with your actual name, photo filename, and profile links.
 - Add a downloadable resume PDF and update the `resume.html` page.
